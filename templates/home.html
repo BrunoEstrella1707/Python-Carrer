@@ -18,6 +18,13 @@
     
       <h2 class="text-center">Vagas Abertas</h2>
       <p>Aqui serão retornadas as vagas sobre a Linguagem python</p>
+      
+      <p>
+        {% for vaga in vagas %}
+          {% include 'includes/vagas_item.html'%}
+        {% endfor %}
+      </p>
+      
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Entrar em contato</button>
       </div>
